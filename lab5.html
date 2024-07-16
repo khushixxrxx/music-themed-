@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Hub</title>
+<style>
+/* General Reset and Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Layout Styles */
+header {
+  background-color: #78c850;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #c65d6d;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.content {
+  flex: 70%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  flex: 30%;
+  background-color: #eceff5;
+  padding: 20px;
+  position: relative;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.audio-player {
+  margin-top: 20px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #78c850;
+  color: #583271;
+  text-align: center;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Welcome to Music Hub</h1>
+  <nav>
+    <ul>
+      <li><a href="#genres">Genres</a></li>
+      <li><a href="#artists">Featured Artists</a></li>
+      <li><a href="#instruments">Instruments</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="genres" class="content">
+    <h2>Music Genres</h2>
+    <article>
+      <h3>Rock</h3>
+      <p>Rock music is a genre characterized by its driving rhythms, amplified instrumentation, and often rebellious attitude.</p>
+    </article>
+    <article>
+      <h3>Pop</h3>
+      <p>Pop music is a genre known for its catchy melodies, accessible lyrics, and widespread appeal across diverse audiences.</p>
+    </article>
+  </section>
+  
+  <section id="artists" class="content">
+    <h2>Featured Artists</h2>
+    <article>
+      <h3>Taylor Swift</h3>
+      <p>Taylor Swift is a prolific singer-songwriter celebrated for her heartfelt storytelling and genre-defying pop music.</p>
+    </article>
+    <article>
+      <h3>Selena Gomez</h3>
+      <p>Selena Gomez is a versatile artist known for her contributions to pop music and acting.</p>
+    </article>
+  </section>
+  
+  <section id="instruments" class="content">
+    <h2>Instruments</h2>
+    <article>
+      <h3>Guitar</h3>
+      <p>The guitar is a versatile stringed instrument with a wooden body and a long neck featuring frets for finger placement. Its six strings produce a wide range of sounds, making it a popular choice in various music genres.</p>
+    </article>
+    <article>
+      <h3>Piano</h3>
+      <p>The piano is a versatile keyboard instrument with a wide range of keys, typically 88, that produce sound when pressed, striking strings connected to a soundboard. It's a cornerstone of classical, jazz, and contemporary music, offering dynamic expression and harmonic richness.</p>
+    </article>
+  </section>
+</main>
+
+<div class="card-container">
+  <div class="card">
+    <img src="https://americannoise.com/wp-content/uploads/2018/07/Taylor-Swift-Love-Story-1200x1200.jpg" alt="Love Story">
+    <h3>Love Story</h3>
+    <p>"Love Story" by Taylor Swift is a romantic country-pop song that tells the tale of forbidden love inspired by William Shakespeare's "Romeo and Juliet." With catchy melodies and heartfelt lyrics, it narrates the journey of two lovers overcoming obstacles to be together, evoking themes of destiny, passion, and enduring love.</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://th.bing.com/th/id/R.c758e22e9b5604eaf593275eca764288?rik=52fsl%2bxH%2bxJVDw&pid=ImgRaw&r=0" alt="Enjoy the Silence">
+    <h3>Enjoy the Silence</h3>
+    <p>"Enjoy the Silence" is a song by Depeche Mode. Released in 1990 as a single from their album "Violator," the song became a massive hit worldwide, topping charts in multiple countries. Its haunting melody, evocative lyrics, and iconic music video contributed to its enduring popularity and cemented it as one of Depeche Mode's signature songs.</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://i.ytimg.com/vi/-HjpL-Ns6_A/maxresdefault.jpg" alt="Back to You">
+    <h3>Back to You</h3>
+    <p>"Back to You" is a song by Selena Gomez that was released in 2018 as a single for the second season of the Netflix series "13 Reasons Why," which Gomez co-produced. The song features a catchy melody with upbeat pop production, and its lyrics reflect themes of love, longing, and the complexity of relationships.</p>
+  </div>
+</div>
+
+<section class="content">
+  <h2>Image Gallery</h2>
+  <div class="image-gallery">
+    <img src="https://americannoise.com/wp-content/uploads/2018/07/Taylor-Swift-Love-Story-1200x1200.jpg" alt="Image 1">
+    <img src="https://th.bing.com/th/id/R.c758e22e9b5604eaf593275eca764288?rik=52fsl%2bxH%2bxJVDw&pid=ImgRaw&r=0" alt="Image 2">
+    <img src="https://i.ytimg.com/vi/-HjpL-Ns6_A/maxresdefault.jpg" alt="Image 3">
+  </div>
+  
+  <h2>Audio Clips</h2>
+  <audio controls>
+    <source src="file:///C:/Users/WELCOME/Downloads/yt1s.com%20-%20Taylor%20Swift%20%20Love%20Story.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <h2>Video</h2>
+  <div class="video-container">
+    <video controls>
+      <source src="http://example.com/videos/TaylorSwift-LoveStory.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+<footer>
+  &copy; 202
